@@ -1,0 +1,175 @@
+*,* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.margin_width {
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.margin_height {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.box {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 31px;
+    padding-bottom: 37px;
+}
+
+.first {
+    background-color: hsl(100, 100%, 100%);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+p {
+    color:hsl(204, 43%, 93%);
+}
+
+p.p1 {
+    color: hsl(218, 22%, 67%);
+    letter-spacing: -0.9px;
+    display: inline;
+    line-height: 30px;
+}
+
+.secondary {
+    color: hsl(204, 43%, 93%);
+}
+
+.value {
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.per {
+    color: hsla(203, 44%, 93%, 0.685);
+    position: relative;
+    top: -6px;
+}
+
+.bottom {
+    background-color:hsl(71, 73%, 54%);
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    color:hsl(204, 43%, 93%);
+}
+
+.item {
+    margin-top: 3px;
+}
+
+.last {
+    border-bottom-right-radius: 7px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .last {
+        border-bottom-left-radius: 7px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .margin_width {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    .box {
+        display: inline;
+        float: left;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .last {
+        width: 50%;
+    }
+
+    .middle {
+        border-bottom-left-radius: 7px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .margin_width {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+    
+    .box {
+        display: inline;
+        float: left;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .last {
+        width: 50%;
+    }
+
+    .middle {
+        border-bottom-left-radius: 7px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .margin_width {
+        margin-left: 390px;
+        margin-right: 390px;
+    }
+    
+    .box {
+        display: inline;
+        float: left;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .last {
+        width: 50%;
+    }
+
+    .middle {
+        border-bottom-left-radius: 7px;
+        width: 50%;
+    }
+}

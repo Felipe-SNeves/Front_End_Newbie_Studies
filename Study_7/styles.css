@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Red Hat Display;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+body .margins {
+    margin-left: 40%;
+    margin-top: 2.5%;
+}
+
+.card {
+    border-radius: 17px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    text-align: center;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.144);
+}
+
+.card .background-image {
+    width: 350px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+.description, .controls {
+    margin-left: 31px;
+    margin-right: auto;
+    width: 290px;
+    font-size: 16px;
+}
+
+h2 {
+    color: hsl(223, 47%, 18%);
+    margin-top: 21px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.description-details {
+    color: hsl(224, 16%, 47%);
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.plan-details {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding-top: 17px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+.icon, .details {
+    display: inline;
+    float: left;
+    padding: 0px;
+}
+
+.plan-details .details {
+    margin-left: 18px;
+}
+
+.detail-title {
+    display: block;
+    color: hsl(222, 49%, 15%);
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.detail-desc {
+    color: hsl(224, 16%, 47%);
+}
+
+a {
+    color: hsl(245, 73%, 37%);
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    left: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: hsl(245, 90%, 59%);
+    text-decoration: none;
+}
+
+.confirm, .cancel {
+    width: 100%;
+    display: block;
+}
+
+.confirm {
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 12px;
+    border-style: none;
+    transition: 0.5s;
+    box-shadow: 5px 15px 30px rgba(0, 0, 255, .2);
+}
+
+.confirm:hover {
+    background-color: hsl(245, 91%, 66%);
+}
+
+.cancel {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 12px;
+    border-style: none;
+    color: hsl(223, 19%, 48%);
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.cancel:hover {
+    color: hsl(222, 45%, 18%);
+}
+
+@media only screen and (max-width: 700px) {
+    body .margins {
+        margin-left: 10%;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Newbie Study 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="front end development study exercise javascript js html css" />
+    <meta name="description" content="Front end development exercise done with javascript, html and css" />
+    <meta name="author" content="Felipe Neves" />
+    <meta name="date" content="24/07/2021" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <script lang="javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="horizontal margin" class="horizontal">
+        <div id="vertical margin" class="vertical">
+          <div class="left">
+            <div id="text content" class="tcontent">
+              <div id="title" class="title">
+                <p>Learn to code by watching others</p>
+              </div>
+              <div id="text" class="text">
+                <p>See how experienced developers solve problems in real-time. Watching 
+                scripted tutorials is great, but undestanding how developers think is
+                invaluable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="form content" class="right">
+            <a href="#">
+              <div id="try button" class="btn1" href=>
+                  <span style="font-weight: 600;">Try it free 7 days</span> then $20/mo. thereafter
+              </div>
+            </a>
+            <div id="form" class="form">
+              <form>
+                <div id="form horizontal padding" class="fhorizontal">
+                  <div id="form vertical padding" class="fvertical">
+                    <div id="first name form group">
+                      <input id="fname" oninput="check('fname');" type="text" minlength="3" maxlength="24" placeholder="First Name" required />
+                      <div id="error icon">
+                        <svg id="error_icon_fname" class="error" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+                      </div>
+                      <div id="error_alert_fname" class="alert">
+                        <p>First name cannot be empty</p>
+                      </div>
+                    </div>
+                    <div id="last name form group">
+                      <input id="lname" oninput="check('lname');" type="text" minlength="2" maxlength="24" placeholder="Last Name" required />
+                      <div id="error icon">
+                        <svg id="error_icon_lname" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+                      </div>
+                      <div id="error_alert_lname" class="alert">
+                        <p>Last name cannot be empty</p>
+                      </div>
+                    </div>
+                    <div id="email address form group">
+                      <input id="iemail" oninvalid="invalidEmail()" oninput="check('iemail');" type="email" minlenght="6" maxlength="24" placeholder="Email Address" required />
+                      <div id="error icon">
+                        <svg id="error_icon_iemail" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+                      </div>
+                      <div id="error_alert_iemail" class="alert">
+                        <p>Looks like this is not an email</p>
+                      </div>
+                    </div>
+                    <div id="password form group">
+                      <input id="ipass" oninput="check('ipass');" type="password" minlength="8" maxlength="24" placeholder="Password" required/>
+                      <div id="error icon">
+                        <svg id="error_icon_ipass" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+                      </div>
+                      <div id="error_alert_ipass" class="alert">
+                        <p>Password cannot be empty</p>
+                      </div>
+                    </div>
+                    <div id="button submit">
+                      <button onclick="isValid();">
+                        CLAIM YOUR FREE TRIAL
+                      </button>
+                    </div>
+                    <div id="terms" class="terms">
+                      <p>By clicking the button, you are agreeing to our
+                        <span style="color: hsl(0, 100%, 74%); font-weight: 700;">Tearms and Services</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

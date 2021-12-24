@@ -1,0 +1,172 @@
+*,* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.my {
+    margin-top: 145px;
+}
+
+.background {
+    height: 143px;
+}
+
+.background img {
+    height: 143px;
+    width: 390px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile {
+    width: 390px;
+    text-align: center;
+    border-color: hsl(0, 0%, 59%);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+}
+
+.profile .photo img {
+    border-radius: 100%;
+    border-style: solid;
+    border-color: hsl(100,100%,100%);
+    border-width: 5px;
+    position: relative;
+    top: -50px;
+}
+
+.profile .person {
+    top: -30px;
+    position: relative;
+}
+
+.info {
+    width: 390px;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 90px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.info .status_list {
+    list-style: none;
+}
+
+.info .status_list .item {
+    margin-top: 29px;
+    margin-bottom: 29px;
+    float: left;
+    padding-right: 16px;
+    position: relative;
+}
+
+.desc {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.list {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.strong {
+    color: hsl(228, 28%, 14%);
+}
+
+.item .desc {
+    display: block;
+}
+
+.bubbles .first {
+    top: -600px;
+    z-index: -10;
+    position: fixed;
+    right: 150px;
+}
+
+.bubbles .second {
+    top: 275px;
+    left: 150px;
+    z-index: -10;
+    position: fixed;
+}
+
+@media screen and (max-width: 450px) {
+
+    .background img {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .bubbles .first {
+        right: 250px;
+    }
+    
+    .bubbles .second {
+        left: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .bubbles .first {
+        right: 350px;
+    }
+    
+    .bubbles .second {
+        top: 350px;
+        left: 350px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .bubbles .first {
+        right: 550px;
+    }
+    
+    .bubbles .second {
+        top: 350px;
+        left: 550px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .bubbles .first {
+        right: 650px;
+    }
+    
+    .bubbles .second {
+        top: 350px;
+        left: 650px;
+    }
+}

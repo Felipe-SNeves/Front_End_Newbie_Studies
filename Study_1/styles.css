@@ -1,0 +1,245 @@
+*,* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    font-size: 15px;
+    align-content: center;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 1.25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 13.5px;
+}
+
+.card .image {
+    border-top-right-radius: 1.25%;
+    overflow: hidden;
+}
+
+.card .image .filter {
+    background: rgba(101, 7, 160, 0.513);
+}
+
+.card .content .body {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.65rem;
+}
+
+.card .footer {
+    line-height: 2rem;
+}
+
+.card .footer p {
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 0.1rem;
+}
+
+@media all and (max-width: 768px) {
+
+    .card {
+        margin-top: 43.5px;
+        margin-bottom: 22px;
+        max-width: 327px;
+    }
+
+    .card .image {
+        border-top-left-radius: 1.25%;
+        background: url(images/image-header-mobile.jpg);
+        background-size: 327px 240px;
+        height: 240px;
+    }
+
+    .card .image .filter {
+        height: 240px;
+    }
+
+    .card .content {
+        text-align: center;
+        margin-top: 21.5px;
+        margin-left: 33px;
+        margin-right: 15px;
+    }
+
+    .card .content .body {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .card .footer {
+        margin-top: 35px;
+    }
+
+    .card .footer p {
+        font-weight: 700;
+    }
+
+    .card .footer .item {
+        margin-bottom: 37px;
+    }
+
+    .card .footer .last {
+        margin-bottom: 13.5px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    
+    .card {
+        margin-top: 176.5px;
+        margin-bottom: 22px;
+        max-width: 700px;
+    }
+
+    .card .image {
+        background: url(images/image-header-desktop.jpg);
+        border-bottom-right-radius: 1.25%;
+        background-size: 100% 100%;
+        width: 49%;
+        height: 50%;
+        float: right;
+    }
+
+    .card .image .filter {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card .content {
+        height: 307px;
+        clear: none;
+        text-align: left;
+        padding-top: 15px;
+        margin-left: 18px;
+    }
+
+    .card .content .body {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .card .footer {
+        margin-top: 35px;
+        display: flex;
+        float: left;
+    }
+
+    .card .footer p {
+        font-family: Lexend Deca;
+        font-weight: 400;
+    }
+
+    .card .footer .item {
+        padding-right: 5%;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+
+    .card {
+        margin-top: 176.5px;
+        margin-bottom: 11px;
+        max-width: 940px;
+    }
+
+    .card .image {
+        background: url(images/image-header-desktop.jpg);
+        border-bottom-right-radius: 1.25%;
+        background-size: 100% 100%;
+        width: 40%;
+        height: 50%;
+        float: right;
+    }
+
+    .card .image .filter {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card .content {
+        height: 307px;
+        clear: none;
+        text-align: left;
+        padding-top: 39px;
+        margin-left: 36.5px;
+    }
+
+    .card .content .body {
+        margin-top: 20px;
+        margin-right: 125px;
+    }
+
+    .card .footer {
+        margin-top: 35px;
+        display: flex;
+        float: left;
+    }
+
+    .card .footer p {
+        font-family: Lexend Deca;
+        font-weight: 400;
+    }
+
+    .card .footer .item {
+        padding-right: 65px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    
+    .card {
+        margin-top: 176.5px;
+        margin-bottom: 11px;
+        max-width: 1110px;
+    }
+
+    .card .image {
+        background: url(images/image-header-desktop.jpg);
+        border-bottom-right-radius: 1.25%;
+        background-size: 100% 100%;
+        width: 45%;
+        height: 64%;
+        float: right;
+    }
+
+    .card .image .filter {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card .content {
+        height: 397px;
+        clear: none;
+        text-align: left;
+        padding-top: 39px;
+        margin-left: 73px;
+        margin-right: 45rem;
+    }
+
+    .card .content .body {
+        margin-top: 34px;
+    }
+
+    .card .footer {
+        margin-top: 81px;
+        display: flex;
+        float: left;
+    }
+
+    .card .footer p {
+        font-family: Lexend Deca;
+        font-weight: 400;
+    }
+
+    .card .footer .item {
+        padding-right: 65px;
+    }
+}
