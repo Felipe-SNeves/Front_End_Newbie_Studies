@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<title>Visualizador de Evolução de Área</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="./stylesheet.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<script src="./script.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="loading">
+				<h1>Aguarde o carregamento das imagens</h1>
+				<p>Após o carregamento das imagens, poderá demorar alguns segundos para que a imagem apareça</p>
+				<p>Progresso: <span id="progress">0</span>%</p>
+			</div>
+			<div class="content">
+				<h1>Visualizador de Evolução de Área</h1>
+				<div class="form">
+					<form>
+						<div class="form-group">
+							<div class="form-input">
+								<label for="latitude">Latitude</label>
+								<input type="text" placeholder="Insira a latitude" id="latitude"/>
+							</div>
+							<div class="form-input">
+								<label for="longitude">Longitude</label>
+								<input type="text" placeholder="Insira a longitude" id="longitude"/>
+							</div>
+						</div>
+						<button type="button" onClick="makeRequests ()">Visualizar</button>
+					</form>
+				</div>
+				<div class="result-group">
+					<h2>Resultado</h2>
+					<img id="result" alt="A imagem aparecerá aqui" />
+					<p class="footer">Imagem retirada em: <span id="date"></span></p>
+					<button id="replay" onClick="showEvolution ()" type="button" disabled>Replay</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
